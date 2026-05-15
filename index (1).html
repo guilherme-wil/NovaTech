@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NovaTech — Beyond the Horizon</title>
+  <meta name="description" content="NovaTech — Plataforma de tecnologia de próxima geração que redefine o futuro digital." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="CSS/style.css" />
+</head>
+<body>
+  <div id="loader" class="loader">
+    <div class="loader__inner">
+      <div class="loader__logo">
+        <span class="loader__logo-n">N</span><span class="loader__logo-t">T</span>
+      </div>
+      <div class="loader__bar">
+        <div class="loader__bar-fill"></div>
+      </div>
+      <p class="loader__text">Inicializando...</p>
+    </div>
+  </div>
+  <div id="cursor" class="cursor"></div>
+  <div id="cursor-trail" class="cursor-trail"></div>
+  <nav id="navbar" class="navbar">
+    <div class="navbar__container">
+      <a href="#" class="navbar__logo">
+        <span class="navbar__logo-icon">◈</span>
+        NovaTech
+      </a>
+      <ul class="navbar__links">
+        <li><a href="#about" class="navbar__link">Sobre</a></li>
+        <li><a href="#services" class="navbar__link">Serviços</a></li>
+        <li><a href="#stats" class="navbar__link">Resultados</a></li>
+        <li><a href="#testimonials" class="navbar__link">Clientes</a></li>
+        <li><a href="#tech" class="navbar__link">Stack</a></li>
+      </ul>
+      <a href="#cta" class="btn btn--nav">Começar agora</a>
+      <button class="navbar__hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="navbar__mobile" id="mobile-menu">
+      <ul>
+        <li><a href="#about" class="navbar__link">Sobre</a></li>
+        <li><a href="#services" class="navbar__link">Serviços</a></li>
+        <li><a href="#stats" class="navbar__link">Resultados</a></li>
+        <li><a href="#testimonials" class="navbar__link">Clientes</a></li>
+        <li><a href="#tech" class="navbar__link">Stack</a></li>
+        <li><a href="#cta" class="btn btn--nav">Começar agora</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section id="hero" class="hero">
+    <canvas id="hero-canvas" class="hero__canvas"></canvas>
+    <div class="hero__grid-overlay"></div>
+    <div class="hero__content">
+      <div class="hero__badge reveal-up">
+        <span class="hero__badge-dot"></span>
+        Série B · $47M arrecadados
+      </div>
+      <h1 class="hero__headline reveal-up">
+        O futuro da<br />
+        <span class="hero__headline-gradient">inteligência</span><br />
+        começa aqui.
+      </h1>
+      <p class="hero__sub reveal-up">
+        NovaTech une IA de ponta, infraestrutura em nuvem e experiências<br class="br-desktop" />
+        imersivas para empresas que recusam se conformar com o ordinário.
+      </p>
+      <div class="hero__ctas reveal-up">
+        <a href="#cta" class="btn btn--primary">
+          <span>Solicitar demo</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#about" class="btn btn--ghost">
+          <span>Saiba mais</span>
+        </a>
+      </div>
+      <div class="hero__metrics reveal-up">
+        <div class="hero__metric">
+          <span class="hero__metric-value">99.99%</span>
+          <span class="hero__metric-label">Uptime SLA</span>
+        </div>
+        <div class="hero__metric-divider"></div>
+        <div class="hero__metric">
+          <span class="hero__metric-value">3.2ms</span>
+          <span class="hero__metric-label">Latência média</span>
+        </div>
+        <div class="hero__metric-divider"></div>
+        <div class="hero__metric">
+          <span class="hero__metric-value">400+</span>
+          <span class="hero__metric-label">Empresas ativas</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll-hint">
+      <div class="hero__scroll-line"></div>
+      <span>scroll</span>
+    </div>
+  </section>
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Nossa essência</span>
+        <h2 class="section-title">Tecnologia que <em>transforma</em></h2>
+        <p class="section-desc">
+          Fundada em 2021 por ex-engenheiros do MIT e Google, a NovaTech nasceu com uma missão clara:
+          tornar a inteligência artificial acessível, poderosa e segura para organizações de qualquer porte.
+        </p>
+      </div>
+      <div class="about__cards">
+        <div class="about__card glass reveal-up">
+          <div class="about__card-icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="10" stroke="url(#g1)" stroke-width="1.5"/><path d="M14 9v5l3 3" stroke="url(#g1)" stroke-width="1.5" stroke-linecap="round"/><defs><linearGradient id="g1" x1="4" y1="4" x2="24" y2="24" gradientUnits="userSpaceOnUse"><stop stop-color="#3B82F6"/><stop offset="1" stop-color="#8B5CF6"/></linearGradient></defs></svg>
+          </div>
+          <h3>Velocidade extrema</h3>
+          <p>Infraestrutura edge-first com mais de 200 pontos de presença global. Resposta em milissegundos, não em segundos.</p>
+        </div>
+        <div class="about__card glass reveal-up" data-delay="100">
+          <div class="about__card-icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 4L4 9v10l10 5 10-5V9L14 4z" stroke="url(#g2)" stroke-width="1.5" stroke-linejoin="round"/><path d="M14 4v20M4 9l10 5 10-5" stroke="url(#g2)" stroke-width="1.5"/><defs><linearGradient id="g2" x1="4" y1="4" x2="24" y2="24" gradientUnits="userSpaceOnUse"><stop stop-color="#3B82F6"/><stop offset="1" stop-color="#8B5CF6"/></linearGradient></defs></svg>
+          </div>
+          <h3>Segurança de nível militar</h3>
+          <p>Criptografia AES-256 em repouso e em trânsito. Conformidade SOC 2 Type II, ISO 27001 e LGPD nativa.</p>
+        </div>
+        <div class="about__card glass reveal-up" data-delay="200">
+          <div class="about__card-icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M5 14h4l3-8 4 16 3-8h4" stroke="url(#g3)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="g3" x1="4" y1="4" x2="24" y2="24" gradientUnits="userSpaceOnUse"><stop stop-color="#3B82F6"/><stop offset="1" stop-color="#8B5CF6"/></linearGradient></defs></svg>
+          </div>
+          <h3>IA adaptativa</h3>
+          <p>Modelos de machine learning que aprendem com o comportamento do seu negócio, entregando insights únicos em tempo real.</p>
+        </div>
+        <div class="about__card glass reveal-up" data-delay="300">
+          <div class="about__card-icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="3" stroke="url(#g4)" stroke-width="1.5"/><circle cx="6" cy="8" r="2" stroke="url(#g4)" stroke-width="1.5"/><circle cx="22" cy="8" r="2" stroke="url(#g4)" stroke-width="1.5"/><circle cx="6" cy="20" r="2" stroke="url(#g4)" stroke-width="1.5"/><circle cx="22" cy="20" r="2" stroke="url(#g4)" stroke-width="1.5"/><path d="M8 9l4 3M20 9l-4 3M8 19l4-3M20 19l-4-3" stroke="url(#g4)" stroke-width="1.5" stroke-linecap="round"/><defs><linearGradient id="g4" x1="4" y1="4" x2="24" y2="24" gradientUnits="userSpaceOnUse"><stop stop-color="#3B82F6"/><stop offset="1" stop-color="#8B5CF6"/></linearGradient></defs></svg>
+          </div>
+          <h3>Integração zero-fricção</h3>
+          <p>SDK disponível em 12 linguagens. API RESTful e GraphQL. Webhooks, SSO e integrações nativas com 80+ ferramentas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="services" class="services section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">O que fazemos</span>
+        <h2 class="section-title">Soluções que <em>escalam</em></h2>
+      </div>
+      <div class="services__grid">
+        <div class="service-card service-card--featured glass reveal-up">
+          <div class="service-card__number">01</div>
+          <div class="service-card__glow"></div>
+          <h3>NovaMind AI Platform</h3>
+          <p>Plataforma unificada de IA generativa, analytics preditivo e automação de processos. Treine, implante e monitore modelos em produção com um clique.</p>
+          <ul class="service-card__list">
+            <li>Modelos foundation customizáveis</li>
+            <li>AutoML sem código</li>
+            <li>Monitoramento de drift em tempo real</li>
+          </ul>
+          <a href="#" class="service-card__link">Explorar plataforma →</a>
+        </div>
+        <div class="service-card glass reveal-up" data-delay="100">
+          <div class="service-card__number">02</div>
+          <h3>CloudEdge Infrastructure</h3>
+          <p>Infraestrutura serverless distribuída nos 5 continentes. Escale de 0 a 1 milhão de requisições sem configuração manual.</p>
+          <a href="#" class="service-card__link">Ver planos →</a>
+        </div>
+        <div class="service-card glass reveal-up" data-delay="150">
+          <div class="service-card__number">03</div>
+          <h3>SecureVault</h3>
+          <p>Gestão de identidade, acesso e conformidade de dados para empresas com ambientes regulatórios complexos.</p>
+          <a href="#" class="service-card__link">Ver solução →</a>
+        </div>
+        <div class="service-card glass reveal-up" data-delay="200">
+          <div class="service-card__number">04</div>
+          <h3>InsightStream</h3>
+          <p>Pipeline de dados em tempo real com dashboards personalizados. Decisões baseadas em fatos, não em achismos.</p>
+          <a href="#" class="service-card__link">Ver demo →</a>
+        </div>
+        <div class="service-card glass reveal-up" data-delay="250">
+          <div class="service-card__number">05</div>
+          <h3>DevFlow CI/CD</h3>
+          <p>Esteira de entrega contínua com deploy atômico, rollback instantâneo e feature flags granulares por segmento.</p>
+          <a href="#" class="service-card__link">Testar grátis →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="stats" class="stats section">
+    <div class="stats__bg"></div>
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Números reais</span>
+        <h2 class="section-title">Resultados que <em>importam</em></h2>
+      </div>
+      <div class="stats__grid">
+        <div class="stats__item reveal-up">
+          <span class="stats__value" data-target="47">0</span>
+          <span class="stats__suffix">M</span>
+          <p class="stats__label">em investimento captado</p>
+        </div>
+        <div class="stats__item reveal-up" data-delay="100">
+          <span class="stats__value" data-target="400">0</span>
+          <span class="stats__suffix">+</span>
+          <p class="stats__label">empresas clientes</p>
+        </div>
+        <div class="stats__item reveal-up" data-delay="200">
+          <span class="stats__value" data-target="99">0</span>
+          <span class="stats__suffix">.99%</span>
+          <p class="stats__label">uptime garantido</p>
+        </div>
+        <div class="stats__item reveal-up" data-delay="300">
+          <span class="stats__value" data-target="12">0</span>
+          <span class="stats__suffix">B</span>
+          <p class="stats__label">requisições processadas</p>
+        </div>
+        <div class="stats__item reveal-up" data-delay="400">
+          <span class="stats__value" data-target="38">0</span>
+          <span class="stats__suffix">+</span>
+          <p class="stats__label">países atendidos</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="testimonials" class="testimonials section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Quem usa, aprova</span>
+        <h2 class="section-title">Voz dos <em>clientes</em></h2>
+      </div>
+      <div class="testimonials__carousel reveal-up">
+        <div class="testimonials__track" id="testimonials-track">
+          <div class="testimonial glass">
+            <div class="testimonial__quote">"</div>
+            <p>A NovaTech reduziu nosso custo de infraestrutura em 62% e triplicou a velocidade de entrega do nosso time de produto. Não consigo imaginar operar sem eles.</p>
+            <div class="testimonial__author">
+              <div class="testimonial__avatar">LM</div>
+              <div>
+                <strong>Lucas Mendonça</strong>
+                <span>CTO — Fintech Vortex</span>
+              </div>
+            </div>
+            <div class="testimonial__stars">★★★★★</div>
+          </div>
+          <div class="testimonial glass">
+            <div class="testimonial__quote">"</div>
+            <p>Implantamos o NovaMind em 3 semanas e já no primeiro mês a taxa de churn caiu 18%. Os modelos preditivos são absurdamente precisos para nosso segmento.</p>
+            <div class="testimonial__author">
+              <div class="testimonial__avatar">AP</div>
+              <div>
+                <strong>Ana Paula Reis</strong>
+                <span>Head of Growth — SaaS Meridian</span>
+              </div>
+            </div>
+            <div class="testimonial__stars">★★★★★</div>
+          </div>
+          <div class="testimonial glass">
+            <div class="testimonial__quote">"</div>
+            <p>O suporte técnico da NovaTech é de outro nível. Tivemos um incidente às 3h da manhã e em 11 minutos o time já estava online com solução em mãos.</p>
+            <div class="testimonial__author">
+              <div class="testimonial__avatar">RC</div>
+              <div>
+                <strong>Rafael Cardoso</strong>
+                <span>VP Engineering — E-commerce Nexum</span>
+              </div>
+            </div>
+            <div class="testimonial__stars">★★★★★</div>
+          </div>
+          <div class="testimonial glass">
+            <div class="testimonial__quote">"</div>
+            <p>A integração com nossa stack legada foi surpreendentemente simples. Em duas sprints já estávamos em produção com todos os módulos. ROI em 45 dias.</p>
+            <div class="testimonial__author">
+              <div class="testimonial__avatar">BF</div>
+              <div>
+                <strong>Beatriz Fontes</strong>
+                <span>CEO — HealthTech Cliniq</span>
+              </div>
+            </div>
+            <div class="testimonial__stars">★★★★★</div>
+          </div>
+        </div>
+        <div class="testimonials__controls">
+          <button class="testimonials__btn" id="prev-btn" aria-label="Anterior">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M12 5l-5 5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="testimonials__dots" id="testimonials-dots"></div>
+          <button class="testimonials__btn" id="next-btn" aria-label="Próximo">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M8 5l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="tech" class="tech section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Nossa stack</span>
+        <h2 class="section-title">Construído com as <em>melhores</em></h2>
+      </div>
+      <div class="tech__grid reveal-up">
+        <div class="tech__item" data-name="Kubernetes">
+          <div class="tech__icon">
+            <svg viewBox="0 0 48 48" fill="none" width="36" height="36"><circle cx="24" cy="24" r="20" stroke="#3B82F6" stroke-width="1.5"/><path d="M24 8v8M24 32v8M8 24h8M32 24h8" stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round"/><circle cx="24" cy="24" r="4" fill="#3B82F6" fill-opacity=".3" stroke="#3B82F6" stroke-width="1.5"/></svg>
+          </div>
+          <span>Kubernetes</span>
+        </div>
+        <div class="tech__item" data-name="Rust">
+          <div class="tech__icon">
+            <svg viewBox="0 0 48 48" fill="none" width="36" height="36"><path d="M24 6l16 9v18L24 42 8 33V15L24 6z" stroke="#8B5CF6" stroke-width="1.5"/><circle cx="24" cy="24" r="6" stroke="#8B5CF6" stroke-width="1.5"/></svg>
+          </div>
+          <span>Rust</span>
+        </div>
+        <div class="tech__item" data-name="TensorFlow">
+          <div class="tech__icon">
+            <svg viewBox="0 0 48 48" fill="none" width="36" height="36"><path d="M12 36V12l12-6v36l-12-6zM24 6l12 6v24l-12 6" stroke="#3B82F6" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          </div>
+          <span>TensorFlow</span>
+        </div>
+        <div class="tech__item" data-name="PostgreSQL">
+          <div class="tech__icon">
+            <svg viewBox="0 0 48 48" fill="none" width="36" height="36"><ellipse cx="24" cy="14" rx="14" ry="6" stroke="#8B5CF6" stroke-width="1.5"/><path d="M10 14v20c0 3.314 6.268 6 14 6s14-2.686 14-6V14" stroke="#8B5CF6" stroke-width="1.5"/><path d="M38 24c0 3.314-6.268 6-14 6s-14-2.686-14-6" stroke="#8B5CF6" stroke-width="1.5"/></svg>
+          </div>
+          <span>PostgreSQL</span>
+        </div>
+        <div class="tech__item" data-name="Redis">
+          <div class="tech__icon">
+            <svg viewBox="0 0 48 48" fill="none" width="36" height="36"><path d="M8 20l16-8 16 8-16 8L8 20z" stroke="#3B82F6" stroke-width="1.5" stroke-linejoin="round"/><path d="M8 28l16 8 16-8M8 24l16 8 16-8" stroke="#3B82F6" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          </div>
+          <span>Redis</span>
+        </div>
+        <div class="tech__item" data-name="GraphQL">
+          <div class="tech__icon">
+            <svg viewBox="0 0 48 48" fill="none" width="36" height="36"><polygon points="24,6 40,15 40,33 24,42 8,33 8,15" stroke="#8B5CF6" stroke-width="1.5" stroke-linejoin="round"/><circle cx="24" cy="6" r="2.5" fill="#8B5CF6"/><circle cx="40" cy="15" r="2.5" fill="#8B5CF6"/><circle cx="40" cy="33" r="2.5" fill="#8B5CF6"/><circle cx="24" cy="42" r="2.5" fill="#8B5CF6"/><circle cx="8" cy="33" r="2.5" fill="#8B5CF6"/><circle cx="8" cy="15" r="2.5" fill="#8B5CF6"/></svg>
+          </div>
+          <span>GraphQL</span>
+        </div>
+        <div class="tech__item" data-name="Kafka">
+          <div class="tech__icon">
+            <svg viewBox="0 0 48 48" fill="none" width="36" height="36"><circle cx="24" cy="24" r="4" stroke="#3B82F6" stroke-width="1.5"/><circle cx="12" cy="14" r="3" stroke="#3B82F6" stroke-width="1.5"/><circle cx="36" cy="14" r="3" stroke="#3B82F6" stroke-width="1.5"/><circle cx="12" cy="34" r="3" stroke="#3B82F6" stroke-width="1.5"/><circle cx="36" cy="34" r="3" stroke="#3B82F6" stroke-width="1.5"/><path d="M20 22l-6-6M28 22l6-6M20 26l-6 6M28 26l6 6" stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <span>Kafka</span>
+        </div>
+        <div class="tech__item" data-name="WebAssembly">
+          <div class="tech__icon">
+            <svg viewBox="0 0 48 48" fill="none" width="36" height="36"><rect x="8" y="8" width="32" height="32" rx="4" stroke="#8B5CF6" stroke-width="1.5"/><path d="M16 18l4 12 4-8 4 8 4-12" stroke="#8B5CF6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <span>WebAssembly</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="cta" class="cta-section section">
+    <div class="cta-section__bg"></div>
+    <div class="container">
+      <div class="cta-section__inner glass reveal-up">
+        <div class="cta-section__badge">Disponível agora</div>
+        <h2 class="cta-section__title">
+          Pronto para ir<br /><span>além do horizonte?</span>
+        </h2>
+        <p class="cta-section__desc">
+          Junte-se às 400+ empresas que já transformaram sua operação com a NovaTech.
+          Comece hoje, sem cartão de crédito. Trial de 30 dias com acesso completo.
+        </p>
+        <div class="cta-section__actions">
+          <a href="#" class="btn btn--primary btn--lg">
+            <span>Começar gratuitamente</span>
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9h12M11 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#" class="btn btn--outline btn--lg">Falar com vendas</a>
+        </div>
+        <p class="cta-section__note">Sem cartão · Setup em 5 minutos · Cancele quando quiser</p>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#" class="navbar__logo">
+            <span class="navbar__logo-icon">◈</span>
+            NovaTech
+          </a>
+          <p>Redefining the boundaries of what technology can achieve. Built for those who refuse to settle.</p>
+          <div class="footer__socials">
+            <a href="#" aria-label="Twitter/X" class="footer__social">𝕏</a>
+            <a href="#" aria-label="LinkedIn" class="footer__social">in</a>
+            <a href="#" aria-label="GitHub" class="footer__social">⌥</a>
+          </div>
+        </div>
+        <div class="footer__nav">
+          <div class="footer__col">
+            <h4>Produto</h4>
+            <ul>
+              <li><a href="#">NovaMind AI</a></li>
+              <li><a href="#">CloudEdge</a></li>
+              <li><a href="#">SecureVault</a></li>
+              <li><a href="#">InsightStream</a></li>
+              <li><a href="#">DevFlow</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Empresa</h4>
+            <ul>
+              <li><a href="#">Sobre nós</a></li>
+              <li><a href="#">Carreiras</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Imprensa</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Suporte</h4>
+            <ul>
+              <li><a href="#">Documentação</a></li>
+              <li><a href="#">Status</a></li>
+              <li><a href="#">Contato</a></li>
+              <li><a href="#">Comunidade</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2025 NovaTech Inc. Todos os direitos reservados.</p>
+        <div class="footer__legal">
+          <a href="#">Privacidade</a>
+          <a href="#">Termos</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="JS/script.js"></script>
+</body>
+</html>
